@@ -1,0 +1,160 @@
+{
+  "main": [
+    {
+      "id": 201,
+      "category": "",
+      "title": "",
+      "img": "assets/img/40-lifestyle-urban-gardening-pc-736",
+      "url": "https://www.hyundai.com/worldwide/ko/lifestyle/how-to-create-your-own-urban-garden"
+    },
+    {
+      "id": 202,
+      "category": "지속가능 모빌리티",
+      "title": "Power your beat: 아이오닉 5의 파워를 이용한 DJ공연",
+      "img": "assets/img/11-ioniq-power-your-beat-pc-352x390",
+      "url": "https://www.hyundai.com/worldwide/ko/ioniq/power-your-beat-dj-set"
+    }
+  ],
+  "news": [
+    {
+      "img": "assets/img/05-n-drive-high-performance-pc-448",
+      "category": "고성능",
+      "title": "고성능 차를 운전하는 방법",
+      "url": "https://www.hyundai.com/worldwide/ko/brand/how-to-drive-a-high-performance-car",
+      "id": 1
+    },
+    {
+      "id": 2,
+      "category": "파트너십",
+      "title": "현대자동차 x WhisperAudios ASMR - 투싼과 함께 ASMR 사운드스케이프를 제작하다",
+      "img": "assets/img/86-brand-tucson-asmr-pc-352x400",
+      "url": "https://www.hyundai.com/worldwide/ko/brand/asmr-tucson"
+    },
+    {
+      "id": 3,
+      "category": "아이오닉",
+      "title": "밤하늘 별자리를 만나다: 아이오닉 5와 함께 맞이하는 새해",
+      "img": "assets/img/10-chasing-stars-pc-256",
+      "url": "https://www.hyundai.com/worldwide/ko/ioniq/chasing-stars-with-ioniq-5"
+    },
+    {
+      "id": 4,
+      "category": "아이오닉",
+      "title": "아이오닉 포레스트 신시도 프로젝트: 다음 세대를 위한 나무 심기",
+      "img": "assets/img/09-ioniq-forest-pc-256",
+      "url": "https://www.hyundai.com/worldwide/ko/ioniq/ioniq-forest-sinsido-project"
+    },
+    {
+      "id": 5,
+      "category": "브랜드",
+      "title": "CES 2022: 현대자동차, 로보틱스와 메타버스가 결합된 메타모빌리티로 이동 경험의 영역을 확장하다",
+      "img": "assets/img/85-brand-ces-2022-pc-448",
+      "url": "https://www.hyundai.com/worldwide/ko/brand/ces-2022"
+    },
+    {
+      "id": 6,
+      "category": "아이오닉",
+      "title": "데이비드 드 로스차일드 x 현대자동차 - 차세대 탐험가에게 주는 영감",
+      "img": "assets/img/08-ioniq-david-de-rothschild-part4-pc-352x400",
+      "url": "https://www.hyundai.com/worldwide/ko/ioniq/david-de-rothschild-hyundai-part-4"
+    },
+    {
+      "id": 7,
+      "category": "아이오닉",
+      "title": "데이비드 드 로스차일드 x 현대자동차 - 모빌리티의 미래",
+      "img": "assets/img/07-ioniq-david-de-rothschild-part3-pc-352x400",
+      "url": "https://www.hyundai.com/worldwide/ko/ioniq/david-de-rothschild-hyundai-part-3"
+    },
+    {
+      "id": 8,
+      "category": "아이오닉",
+      "title": "데이비드 드 로스차일드 x 현대자동차 - 자연에게 목소리를 주다",
+      "img": "assets/img/06-ioniq-david-de-rothschild-part2-pc-352x400",
+      "url": "https://www.hyundai.com/worldwide/ko/ioniq/david-de-rothschild-hyundai-part-2"
+    },
+    {
+      "id": 9,
+      "category": "아이오닉",
+      "title": "데이비드 드 로스차일드 x 현대자동차 - 자연 환경 보호를 최우선으로 하는 협업",
+      "img": "assets/img/05-ioniq-david-de-rothschild-part1-pc-352x400",
+      "url": "https://www.hyundai.com/worldwide/ko/ioniq/david-de-rothschild-hyundai-part-1"
+    },
+    {
+      "id": 10,
+      "category": "브랜드",
+      "title": "헤리티지 시리즈 그랜저: 모던하게 재탄생된 1986년 플래그십 세단",
+      "img": "assets/img/84-brand-heritage-grandeur-pc-448",
+      "url": "https://www.hyundai.com/worldwide/ko/brand/heritage-series-grandeur"
+    },
+    {
+      "id": 11,
+      "category": "브랜드",
+      "title": "브리타 라이니키 x 현대자동차 - 전기차 주행에 관한 다섯 가지 질문",
+      "img": "assets/img/83-brand-ev-literacy-part-three-pc-352x400",
+      "url": "https://www.hyundai.com/worldwide/ko/brand/ev-literacy-britta-reineke-part-3"
+    },
+    {
+      "id": 12,
+      "category": "아이오닉",
+      "title": "아이오닉 콘셉트카 '세븐' : \"나만의 시간(Me Time)\"과 \"가족과의 시간(Family Time)\"을 위한 혁신",
+      "img": "assets/img/04-ioniq-seven-pc-256",
+      "url": "https://www.hyundai.com/worldwide/ko/ioniq/introducing-the-seven-concept"
+    }
+  ],
+  "social": [
+    {
+      "id": 101,
+      "title": "8IIHS",
+      "subtit": "Top Safety Awards",
+      "content": "2022년, 현대자동차 8개 차종이 미국 IIHS 충돌평가에서 최고안전한차로 선정되었습니다.",
+      "hash": "#AutoSafety",
+      "img": "assets/img/worldwide-main-instagram-01-8iihs-220315",
+      "url": "https://www.instagram.com/p/Ca3LimLKynU/?taken-by=hyundai_worldwide"
+    },
+    {
+      "id": 102,
+      "title": "Today, everyday",
+      "subtit": "Celevrating Women's Day",
+      "content": "여러분이 없었다면, 세상은 분명 지금과는 달랐을 것입니다.",
+      "hash": "#InternationalWomensDay",
+      "img": "assets/img/worldwide-main-instagram-02-womens-day-220315",
+      "url": "https://www.instagram.com/p/Ca07Q8kIAQU/?taken-by=hyundai_worldwide"
+    },
+    {
+      "id": 103,
+      "title": "IONIQ 5",
+      "subtit": "Popular Features",
+      "content": "아이오닉 5 고객의 50% 이상이 선택한 스마트 센스 패키지",
+      "hash": "#PowerYourWorld",
+      "img": "assets/img/worldwide-main-instagram-03-ioniq5-220315",
+      "url": "https://www.instagram.com/p/CarRgBarKow/?taken-by=hyundai_worldwide"
+    },
+    {
+      "id": 104,
+      "title": "Episode1",
+      "subtit": "Feathers and tingles",
+      "content": "🔊온몸의 긴장을 풀고 편안한 휴식을 만끽하고 싶다면? 마음을 안정시키는 이 ASMR 사운드를 감상해보세요.",
+      "hash": "#ASMcaR",
+      "img": "assets/img/worldwide-main-instagram-04-asmr-220315",
+      "url": "https://www.instagram.com/p/CaUGs3fj_Ks/?taken-by=hyundai_worldwide"
+    },
+    {
+      "id": 105,
+      "title": "Episode2",
+      "subtit": "Soft tapping",
+      "content": "🔊편안히 몸을 기대고 지금 이 순간을 즐겨보세요!",
+      "hash": "#ASMcaR",
+      "img": "assets/img/worldwide-main-instagram-05-asmr-220315",
+      "url": "https://www.instagram.com/p/CaWrGunDu9H/?taken-by=hyundai_worldwide"
+    },
+    {
+      "id": 106,
+      "title": "Episode3",
+      "subtit": "Massage and tracing",
+      "content": "🔊헤드폰을 끼고, 투싼 ASMR과 함께 고요하고 평안한 시간 속으로 빠져보세요.",
+      "hash": "#ASMcaR",
+      "img": "assets/img/worldwide-main-instagram-06-asmr-220315",
+      "url": "https://www.instagram.com/p/CaZQEKEDoBH/?taken-by=hyundai_worldwide"
+    }
+  ]
+}
