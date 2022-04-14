@@ -65,6 +65,10 @@ Array.from(document.querySelectorAll('*[data-include]')).map(async v => {
       });
     })
 
+    document.querySelector('#exit-menu').addEventListener('click', e => {
+      subMenuRemover();
+    })
+
     /* 
     * type          : Event Handler
     * description   : 검색창 시각화
@@ -85,8 +89,8 @@ Array.from(document.querySelectorAll('*[data-include]')).map(async v => {
       subMenuRemover();
     })
 
-    document.querySelector('#exit-menu').addEventListener('click', e => {
-      subMenuRemover();
+    document.querySelector('#exit-search').addEventListener('click', e => {
+      searchRemover();
     })
     
     /* 
