@@ -159,7 +159,7 @@ const getSclWrap = (data) => {
   let json = null;
 
   try {
-    json = await axios.get('https://everydayruru.github.io/portfolio/clone-coding7/backend/article.json');
+    json = await axios.get('https://smilemet.github.io/portfolio/clone7/backend/article.json');
   } catch (e) {
     alert('데이터 전송 중 에러가 발생하였습니다.');
     return;
