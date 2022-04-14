@@ -1,0 +1,167 @@
+/***************************
+Main Color
+****************************/
+// $color1: ;
+// $color2: ;
+
+/***************************
+Default display
+****************************/
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-width: 100%;
+  max-width: 100%;
+  position: relative;
+  word-break: keep-all;
+  font-family: 'Noto Sans KR', sans-serif;
+  color: #333;
+}
+
+a {
+  all: unset;
+  cursor: pointer;
+}
+
+button {
+  all: unset;
+  display: block;
+  cursor: pointer;
+}
+
+li > a {
+  display: block;
+}
+
+.blind-text {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  clip-path: inset(50%);
+}
+
+.flex-row {
+  display: flex;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  float: none;
+  clear: both;
+}
+
+// 커스텀
+.hide {
+  display: none;
+}
+
+div.inner {
+  width: 600px;
+  margin: 0 auto;
+}
+
+div.wrap ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+div.dimmed {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #00000090;
+  z-index: 10;
+}
+
+
+/***************************
+Header
+****************************/
+header {
+  .inner {
+    margin-top: 5rem;
+    text-align: center;
+  }
+  p {
+    width: 100%;
+    padding-bottom: 2rem;
+    font-size: 3rem;
+    span {
+      width: 5rem;
+      height: 5rem;
+    }
+  }
+  h1 {
+    margin: 1rem;
+    font-size: 2rem;
+    font-weight: 500;
+  }
+  h2 {
+    margin: 1rem;
+    font-size: 0.9rem;
+    font-weight: 400;
+
+  }
+  hr {
+    border: none;
+    border-bottom: 1px solid #ccc;
+  }
+}
+
+
+/***************************
+Main
+****************************/
+main {
+  .inner {
+    padding: 2rem 0;
+  }
+  h2 {
+    margin-bottom: 1rem;
+    background-color: #eee;
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 2rem;
+  }
+
+  .page-list {
+    li {
+      margin: 0 0 .5rem 1rem;
+      font-size: 0.9rem;
+      position: relative;
+      opacity: .5;
+      transition: opacity .3s;
+    }
+    li:hover {
+      opacity: 1;
+    }
+    a {
+      padding: .2rem 0;
+    }
+    a::before{
+      content: '·';
+      position: absolute;
+      left: -1rem;
+    }
+  }
+}
+
+
+/***************************
+Footer
+****************************/
