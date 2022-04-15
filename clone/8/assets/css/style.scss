@@ -1,0 +1,151 @@
+/***************************
+Main Color
+****************************/
+$color1: #f6f5ef;
+$color2: #2c2a29;
+$color3: #669900;
+
+/***************************
+Default display
+****************************/
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-width: 100%;
+  max-width: 100%;
+  position: relative;
+  word-break: keep-all;
+}
+
+a {
+  all: unset;
+  cursor: pointer;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+button {
+  all: unset;
+  display: block;
+  cursor: pointer;
+}
+
+li > a {
+  display: block;
+}
+
+.blind-text {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  clip-path: inset(50%);
+}
+
+.flex-row {
+  display: flex;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  float: none;
+  clear: both;
+}
+
+// 커스텀
+.hide {
+  display: none;
+}
+
+div.inner {
+  width: 1100px;
+  margin: 0 auto;
+}
+
+
+/***************************
+Header
+****************************/
+header {
+  position: relative;
+  border-top: 2px solid #333;
+  background: $color1;
+
+  .logo {
+    width: 10rem;
+    padding: 1.2rem;
+  }
+}
+
+header .nav-util {
+  justify-content: flex-end;
+  margin: .5rem 0;
+  font-size: .8rem;
+  color: #666;
+  ul {
+    align-items: center;
+  }
+  li {
+    padding: 0 1rem;
+    border-right: 1px solid #ddd;
+    &:last-of-type {
+      border-right: none;
+    }
+  }
+  button {
+    width: 2rem;
+    height: 2rem;
+    border: 1px solid #ccc;
+    border-radius: 15%;
+    background: url(../img/icon_magnifier_black.png) #fff no-repeat center;
+  }
+}
+
+header .nav-main {
+  h3 {
+    a {
+      display: block;
+      font-size: 0.9rem;
+      padding: .7rem 1.5rem 2.5rem;
+      &:hover {
+        background-color: $color2;
+        color: $color3;
+      }
+    }
+  }
+  .nav-sub {
+    position: absolute;
+    background: $color2;
+  }
+}
+
+/***************************
+Aside
+****************************/
+aside {
+  position: absolute;
+}
+
+/***************************
+Main
+****************************/
+main {}
+
+/***************************
+Footer
+****************************/
