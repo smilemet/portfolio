@@ -3,6 +3,7 @@
  * @author: 방미소
  * @description: section1 각 article 영역에 백엔드에서 읽어온 컨텐츠를 출력한다.
 ***********************/
+import {popupHandler} from './animation.js';
 
 /* 
 * type          : function
@@ -53,7 +54,6 @@ const getNtcWrap = (data) => {
     }
   });
 }
-
 
 /* 
 * type          : function
@@ -159,7 +159,7 @@ const getSclWrap = (data) => {
   let json = null;
 
   try {
-    json = await axios.get('https://smilemet.github.io/portfolio/clone7/backend/article.json');
+    json = await axios.get('https://smilemet.github.io/portfolio/clone/backend/article.json');
   } catch (e) {
     alert('데이터 전송 중 에러가 발생하였습니다.');
     return;
@@ -169,4 +169,5 @@ const getSclWrap = (data) => {
   getNtcWrap(data.main);
   getArtWrap(data.news);
   getSclWrap(data.social);
+  popupHandler();
 })();
