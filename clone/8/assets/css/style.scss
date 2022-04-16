@@ -72,20 +72,51 @@ li > a {
   display: none;
 }
 
+.bold {
+  font-weight: bold;
+}
+
+.abs {
+  position: absolute;
+}
+
 div.inner {
   width: 1100px;
+  height: inherit;
   margin: 0 auto;
 }
 
+// hover 버튼 설정
+.btn-h {
+  $btn-color: #fff; // 버튼 색 설정
+  display: inline-block;
+  padding: .58rem 1.6rem;
+  border: 2px solid $btn-color;
+  border-radius: .3rem;
+  font-size: .9rem;
+  color: $btn-color;
+}
+
+// hover 시 색변화 O 버튼
+.btn-h.btn-type1 {
+  transition: background-color .6s, color .6s;
+  &:hover {
+    color: #fff !important;
+  }
+}
 
 /***************************
 Header
 ****************************/
 header {
-  position: relative;
+  width: 100%;
   border-top: 2px solid #333;
+  border-bottom: 1px solid #ddd;
   background: $color1;
-
+  letter-spacing: -0.01rem;
+  position: fixed;
+  top: 0;
+  z-index: 100;
   .logo {
     width: 10rem;
     padding: 1.2rem;
@@ -138,14 +169,432 @@ header .nav-main {
 Aside
 ****************************/
 aside {
-  position: absolute;
+  background-color: #ccc;
+  text-align: right;
+  .inner div {
+    width: 10rem;
+    margin-left: 36rem;
+    position: fixed;
+    top: 9.5rem;
+    left: 50%;
+    z-index: 100;
+  }
+  a {
+    display: block;
+  }
+  img {
+    width: 140px;
+  }
 }
 
 /***************************
 Main
 ****************************/
-main {}
+main .season-menu {
+  margin-top: 7.4rem;
+  .title {
+    height: 646px;
+    background: url(../img/2022_Summer1_main_bg.jpg) no-repeat center;
+    background-size: cover;
+  }
+  .inner {
+    position: relative;
+  }
+  .title-slogun {
+    width: 22rem;
+    padding: 3rem 0;
+    text-align: center;
+    z-index: 2;
+    .btn-h.btn-type1 {
+      $btn-color : #d73a7a; // 버튼 색
+      margin: 2rem 0;
+      border-color: $btn-color;
+      color: $btn-color;
+      &:hover {background-color: $btn-color;}
+    }
+  }
+  img {
+    &.item1 {
+      left: 14rem;
+      bottom: 7rem;
+    }
+    &.item2 {
+      left: 25.5rem;
+      bottom: 10rem;
+    }
+    &.item3 {
+      left: 57rem;
+      bottom: 5.5rem;
+    }
+  }
+}
+
+main .notice-line {
+  overflow: hidden;
+  .container {
+    align-items: center;
+  }
+  .notice {
+    justify-content: flex-end;
+    align-items: center;
+    width: 53.5%;
+    background-color: #000;
+    color: #fff;
+    text-align: right;
+    dt {
+      font-weight: bold;
+    }
+    li {
+      width: 32rem;
+      max-height: 0rem;
+      overflow: hidden;
+      padding: 0 1rem;
+      text-align: left;
+      font-size: 0.9rem;
+      line-height: 1rem;
+      &.show {
+        max-height: 1rem;
+      }
+    }
+    button {
+      width: 4rem;
+      height: 4rem;
+      background: url(../img/btn_notice_plus.png) no-repeat center;
+      background-size: 55%;
+    }
+  }
+  .promo {
+    width: 46.5%;
+    align-items: center;
+    background-color: $color1;
+    .btn-promo {
+      width: 29rem;
+      height: 4rem;
+      text-align: right;
+    }
+    span {
+      padding-right: 3rem;
+      font-weight: bold;
+    }
+    button {
+      display: inline-block;
+      width: 4rem;
+      height: 4rem;
+      background: url(../img/btn_prom_down.png) no-repeat center;
+      background-size: 55%;
+      vertical-align: middle;
+    }
+  }
+}
+
+main .reward {
+  background-color: #1e3932;
+  color: #fff;
+  .inner {
+    justify-content: space-between;
+    padding: 2rem 3rem 2.5rem;
+    img {
+      width: 11rem;
+      height: 100%;
+    }
+  }
+  .container {
+    width: 100%;
+    padding-left: 3rem;
+    p {
+      line-height: 1.5;
+    }
+    p.title {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+      strong {
+        display: inline;
+        font-size: 1.7rem;
+        font-weight: bold;
+      }
+    }
+    & > div {
+      justify-content: space-between;
+      &:first-of-type {
+        padding-bottom: .7rem;
+        border-bottom: 1px solid #cccccc40;
+      }
+      &:nth-of-type(2) {
+        padding-top: 1rem;
+        font-size: 0.8rem;
+      }
+    }
+    #btn-sign-up {
+      border-color: #00704A;
+      background-color: #00704A;
+    }
+    .btn-box {
+      width: 11.9rem;
+      a {
+        padding-left: 1.15rem;
+        padding-right: 1.15rem;
+      }
+    }
+  }
+}
+
+main .atcl-container {
+  .inner {
+    position: relative;
+  }
+  .item1 {
+    height: 35.7rem;
+    background: url(../img/2022_Summer1_bean_bg2.jpg) no-repeat center;
+    background-size: cover;
+    .abs1 {
+      top: 5rem;
+      left: 9rem;
+    }
+    .abs2 {
+      top: 14rem;
+      right: 9rem;
+      img {
+        margin-bottom: 2.5rem;
+      }
+      .btn-h.btn-type1 {
+        $btn-color: #1e245c;
+        border-color: $btn-color;
+        color: $btn-color;
+        &:hover {background-color: $btn-color;}
+      }
+    }
+  }
+  .item2 {
+    height: 25rem;
+    background: url(../img/reserve_2022_indonesia_visual_bg.jpg) no-repeat center;
+    background-size: cover;
+    .abs1 {
+      width: 32rem;
+      height: 12rem;
+      background: url(../img/reserve_2022_indonesia_title.png) no-repeat center;
+      top: 5rem;
+      .btn-h.btn-type1 {
+        margin-top: 12rem;
+        margin-left: 16.5rem;
+      }
+    }
+    .abs2 {
+      width: 120rem;
+      height: 25rem;
+      background: url(../img/reserve_2022_indonesia_visual3.png) no-repeat;
+      background-position: right bottom;
+      left: -20rem;
+    }
+    .abs3 {
+      top: 17rem;
+      left: 16.5rem;
+      .btn-h.btn-type1 {
+        $btn-color: #b9813e;
+        border-color: $btn-color;
+        color: $btn-color;
+        &:hover {background-color: $btn-color;}
+      }
+    }
+  }
+
+  .item3 {
+    height: 50rem;
+    background: url(../img/fav_prod_bg_new.jpg) no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    .abs1 {
+      width: 30rem;
+      height: 15rem;
+      background: url(../img/fav_prod_txt01.png) no-repeat right;
+      top: 6.5rem;
+      left: -5rem;
+    }
+    .abs2 {
+      width: 30rem;
+      height: 15rem;
+      background: url(../img/fav_prod_txt02.png) no-repeat right;
+      top: 20.5rem;
+      left: -5rem;
+    }
+    .abs3 {
+      bottom: 12.5rem;
+      left: 16.5rem;
+    }
+    .abs4 {
+      width: 50rem;
+      height: 30rem;
+      background: url(../img/2022_Summer1_pick_img.png) no-repeat right;
+      top: 6rem;
+      right: -7rem;
+    }
+    .btn-h.btn-type1 {
+      $btn-color: #fff;
+      border-color: $btn-color;
+      color: $btn-color;
+      &:hover {
+        background-color: $btn-color;
+        color:#333 !important;
+      }
+    }
+  }
+
+  .item4 {
+    height: 25rem;
+    background: url(../img/reserve_bg_pc.png) no-repeat center;
+    background-position: 50% 90%;
+    .abs1 {
+      width: 50rem;
+      height: 10rem;
+      background: url(../img/reserve_text_pc_220120.png) no-repeat left;
+      top: 6rem;
+      left: 2rem;
+    }
+    .abs2 {
+      width: 50rem;
+      height: 25rem;
+      background: url(../img/reserve_visual_pc_220119.png) no-repeat;
+      background-position: top right;
+      right: 5rem;
+    }
+    .abs3 {
+      bottom: 7rem;
+      left: 20rem;
+      .btn-h.btn-type1 {
+        $btn-color: #000;
+        border-color: $btn-color;
+        color: $btn-color;
+        &:hover {background-color: $btn-color;}
+      }
+    }
+  }
+  
+  .item5 {
+    height: 25rem;
+    background: url(../img/store_bg.jpg) no-repeat center;
+    background-size: cover;
+    .inner {
+      background: url(../img/store_exp_img04.png) no-repeat;
+      background-position: bottom right;
+    }
+    .abs1 {
+      width: 25rem;
+      height: 10rem;
+      background: url(../img/store_txt01.png) no-repeat left;
+      top: 2.8rem;
+      right: 2.5rem;
+    }
+    .abs2 {
+      width: 25rem;
+      height: 10rem;
+      background: url(../img/store_txt02.png) no-repeat left;
+      top: 7.5rem;
+      right: 2.5rem;
+    }
+    .abs3 {
+      width: 25rem;
+      height: 20rem;
+      background: url(../img/store_exp_img02.png) no-repeat top;
+      top: 0;
+      left: 2.5rem;
+    }
+    .abs4 {
+      width: 25rem;
+      height: 20rem;
+      background: url(../img/store_exp_img01.png) no-repeat center;
+      top: 6rem;
+      left: 12rem;
+    }
+    .abs5 {
+      width: 25rem;
+      height: 10rem;
+      top: 16.5rem;
+      right: 2.5rem;
+      .btn-h.btn-type1 {
+        $btn-color: #000;
+        border-color: $btn-color;
+        color: $btn-color;
+        &:hover {background-color: $btn-color;}
+      }
+    }
+  }
+}
 
 /***************************
 Footer
 ****************************/
+
+footer {
+  padding: 2rem 0;
+  background-color: $color2;
+  color: #fff;
+  font-size: .72rem;
+  letter-spacing: -0.05rem;
+  .inner {
+    width: 1200px;
+  }
+}
+
+footer .sec1 {
+  padding-bottom: 5rem;
+  .inner {
+    background: url(../img/footer_logo.png) no-repeat right;
+  }
+  .menu-list {
+    li {
+      padding-right: 7rem;
+      margin: .7rem 0;
+    }
+    li.list-tit {
+      font-size: .9rem;
+      margin-bottom: 1.2rem;
+    }
+  }
+}
+
+footer .sec2 {
+  padding:1.5rem 0 2.5rem;
+  background-color: #282828;
+}
+
+footer .sec3 {
+  padding:2rem 0 1rem;
+  font-size: .72rem;
+  color: #ccc;
+  ul {
+    justify-content: center;
+  }
+  li {
+    padding: 0 .7rem;
+    border-right: 1px solid #cccccc20;
+    &:first-of-type {
+      color: #00B050;
+      font-weight: bold;
+    }
+  }
+}
+
+footer .sec4 {
+  text-align: center;
+  // padding:1.5rem 0 2.5rem;
+  .btn-h {
+    margin: 0.1rem;
+    font-size: 0.72rem;
+  }
+}
+
+footer .sec5 {
+  padding:1.5rem 0 1rem;
+  text-align: center;
+  opacity: .5;
+  ul {
+    justify-content: center;
+    padding-bottom: 1.25rem;
+  }
+  li {
+    margin: 0 .5rem;
+  }
+  p.copyright {
+    letter-spacing: 0;
+  }
+}
