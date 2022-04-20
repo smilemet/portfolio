@@ -31,7 +31,7 @@ const subMenuPopUp = (target, sub, event1, event2) => {
     v.addEventListener(event2, e => {
       subs[i].style.maxHeight = 0;
     });
-  })
+  });
 }
 
 subMenuPopUp('#menu', '#sub-menu', 'mouseover', 'mouseout'); // 상단메뉴

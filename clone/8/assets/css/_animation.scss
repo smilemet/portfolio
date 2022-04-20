@@ -3,43 +3,44 @@
 CSS maxheight 이벤트 들어가는 곳에 이거 추가할 것
 transition: max-height 0.1s ease-out;
 */
-
-@keyframes fadeIn {
-  from {
-    opacity: 0%;
-  }
-
-  to {
-    opacity: 100%;
+@mixin animation ($name, $duration, $timing_function) {
+  animation-name: $name;
+  animation-duration: $duration;
+  animation-timing-function: $timing_function;
+}
+@mixin keyframe ($animation_name) {
+  @keyframes #{$animation_name} {
+    @content;
   }
 }
 
-@keyframes fadeOut {
-  from {
-    opacity: 100%;
-  }
-
-  to {
-    opacity: 0%;
-  }
+@include keyframe (fadeIn) {
+  from {opacity: 0%;}
+  to {opacity: 100%;}
+}
+@include keyframe (fadeOut) {
+  from {opacity: 100%;}
+  to {opacity: 0%;}
+}
+@include keyframe (slide-left) {
+  from {transform: translateX(100%);}
+  to {transform: translateX(0%);}
+}
+@include keyframe (slide-right) {
+  from {transform: translateX(0%);}
+  to {transform: translateX(100%);}
 }
 
-@keyframes slide-left {
-  from {
-    transform: translateX(100%);
-  }
-
-  to {
-    transform: translateX(0%);
-  }
+.fadeIn {
+  @include animation (fadeIn, 0.5s, linear)
+}
+.fadeOut {
+  @include animation (fadeOut, 0.5s, linear)
+}
+.slide-left {
+  @include animation (slide-left, 0.5s, linear)
+}
+.slide-right {
+  @include animation (slide-right, 0.5s, linear)
 }
 
-@keyframes slidein-right {
-  from {
-    transform: translateX(0%);
-  }
-
-  to {
-    transform: translateX(100%);
-  }
-}
