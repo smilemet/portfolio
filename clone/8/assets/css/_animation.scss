@@ -1,8 +1,6 @@
-// https://developer.mozilla.org/en-US/docs/Web/CSS/@keyframes
-/**
-CSS maxheight 이벤트 들어가는 곳에 이거 추가할 것
-transition: max-height 0.1s ease-out;
-*/
+/***************************
+animation
+****************************/
 @mixin animation ($name, $duration, $timing_function) {
   animation-name: $name;
   animation-duration: $duration;
@@ -43,4 +41,3 @@ transition: max-height 0.1s ease-out;
 .slide-right {
   @include animation (slide-right, 0.5s, linear)
 }
-

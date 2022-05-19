@@ -1,0 +1,120 @@
+{
+  "coffee": [
+    {
+      "group": 
+        {
+          "name": "커피",
+          "url": "https://www.starbucks.co.kr/coffee/product_list.do"
+        },
+      "menu": [
+        {
+          "name": "스타벅스 원두",
+          "url": ""
+        },
+        {
+          "name": "스타벅스 비아",
+          "url": ""
+        },
+        {
+          "name": "스타벅스앳홈 by 캡슐",
+          "url": ""
+        }
+      ]
+    }
+  ],
+  "menu": [
+    {
+      "group": 
+        {
+          "name": "나와 어울리는 커피",
+          "url": ""
+        },
+      "menu": [
+      ]
+    }
+   ],
+  "store": [
+    {
+      "group": 
+        {
+          "name": "스타벅스 리저브™",
+          "url": ""
+        },
+      "menu": [
+        {
+          "name": "RESERVE MAGAZINE",
+          "url": ""
+        }
+      ]
+    }
+  ],
+  "responsibility": [
+    {
+      "group": 
+        {
+          "name": "",
+          "url": ""
+        },
+      "menu": [
+        {
+          "name": "",
+          "url": ""
+        },
+        {
+          "name": "",
+          "url": ""
+        },
+        {
+          "name": "",
+          "url": ""
+        }
+      ]
+    }
+  ],
+  "rewards": [
+    {
+      "group": 
+        {
+          "name": "",
+          "url": ""
+        },
+      "menu": [
+        {
+          "name": "",
+          "url": ""
+        },
+        {
+          "name": "",
+          "url": ""
+        },
+        {
+          "name": "",
+          "url": ""
+        }
+      ]
+    }
+  ],
+  "new": [
+    {
+      "group": 
+        {
+          "name": "",
+          "url": ""
+        },
+      "menu": [
+        {
+          "name": "",
+          "url": ""
+        },
+        {
+          "name": "",
+          "url": ""
+        },
+        {
+          "name": "",
+          "url": ""
+        }
+      ]
+    }
+  ],
+}
