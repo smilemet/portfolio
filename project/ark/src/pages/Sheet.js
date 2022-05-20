@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 import useAxios from "axios-hooks";
 import styled from "styled-components";
 
@@ -130,6 +130,19 @@ const Sheet = () => {
       }
     })();
   };
+
+  useEffect(() => {
+    console.log(checked);
+    if (blockName) {
+      document.querySelectorAll(`input[type="checkbox"]`).forEach((v) => {
+        v.classList.remove("lastone");
+      });
+
+      document
+        .querySelector(`input[value=${blockName}]`)
+        .classList.add("lastone");
+    }
+  }, [blockName]);
 
   return (
     <SheetContainer className="flex-row">

@@ -14,8 +14,8 @@
     {
       "id": "2",
       "name": "맬코",
-      "maxHp": "50",
-      "currentHp": "50",
+      "maxHp": 50,
+      "currentHp": 10,
       "atk": "15",
       "def": "15",
       "dex": "15",
@@ -25,8 +25,8 @@
     {
       "id": "3",
       "name": "맬리우스",
-      "maxHp": "50",
-      "currentHp": "50",
+      "maxHp": 40,
+      "currentHp": 20,
       "atk": "15",
       "def": "15",
       "dex": "15",
@@ -36,8 +36,8 @@
     {
       "id": "4",
       "name": "맬쇼",
-      "maxHp": "50",
-      "currentHp": "50",
+      "maxHp": 20,
+      "currentHp": 20,
       "atk": "15",
       "def": "15",
       "dex": "15",

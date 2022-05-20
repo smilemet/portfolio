@@ -13,6 +13,9 @@ const Input = styled.input`
   &:checked {
     background-color: ${(props) => props.clicked};
   }
+  &.lastone {
+    background-color: ${(props) => props.last};
+  }
 `;
 
 const MapItem = ({ row, propFunc }) => {
@@ -23,7 +26,11 @@ const MapItem = ({ row, propFunc }) => {
       {[...new Array(7)].map((v, i) => {
         return (
           <td key={i}>
-            <Input type="checkbox" value={`${column[i]}${row}`} onClick={propFunc}></Input>
+            <Input
+              type="checkbox"
+              value={`${column[i]}${row}`}
+              onClick={propFunc}
+            ></Input>
           </td>
         );
       })}
@@ -34,6 +41,7 @@ const MapItem = ({ row, propFunc }) => {
 Input.defaultProps = {
   hover: "#900C3F",
   clicked: "#900C3F50",
+  last: "#4277D3",
 };
 
 export default MapItem;
